@@ -33,7 +33,7 @@
   //= model end
 
   //= item view begin
-  Frontend.CarouselItemCollectionView = Backbone.View.extend({
+  Frontend.CarouselCollectionView = Backbone.View.extend({
     initialize: function(options) {
       this.options = options;
     }
