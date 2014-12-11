@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head lang="ja">
+    <meta charset="utf-8" />
+    <title>frontend 2014-12-11 js</title>
+    <link rel="stylesheet" type="text/css" href="carousel.css" />
+
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="lodash.min.js"></script>
+    <script src="backbone-min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+
+    <div class="carousel" data-role="carousel" data-items='[
+      { "label": "item 1", "url": "http://example.com" },
+      { "label": "item 2", "url": "http://example.com" },
+      { "label": "item 3", "url": "http://example.com" },
+      { "label": "item 4", "url": "http://example.com" },
+      { "label": "item 5", "url": "http://example.com" }
+    ]'>
+      <div class="carousel__items" data-role="carousel-items">
+        <div class="carousel__item red active">
+          <h1 class="carousel__item-label">item 1</h1>
+        </div>
+        <div class="carousel__item blue">
+          <h1 class="carousel__item-label">item 2</h1>
+        </div>
+        <div class="carousel__item yellow">
+          <h1 class="carousel__item-label">item 3</h1>
+        </div>
+        <div class="carousel__item pink">
+          <h1 class="carousel__item-label">item 4</h1>
+        </div>
+        <div class="carousel__item purple">
+          <h1 class="carousel__item-label">item 5</h1>
+        </div>
+      </div>
+
+      <a href="#" class="carousel__control-left" data-role="carousel-control-left">&lt;</a>
+      <a href="#" class="carousel__control-right" data-role="carousel-control-right">&gt;</a>
+
+      <div class="carousel__bullets" data-role="carousel-bullets">
+        <a href="#" class="carousel__bullet active"></a>
+        <a href="#" class="carousel__bullet"></a>
+        <a href="#" class="carousel__bullet"></a>
+        <a href="#" class="carousel__bullet"></a>
+        <a href="#" class="carousel__bullet"></a>
+      </div>
+    </div>
+
+  </body>
+</html>
