@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head lang="ja">
+    <meta charset="utf-8" />
+    <title>frontend 2014-12-11 js</title>
+    <link rel="stylesheet" type="text/css" href="carousel.css" />
+
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="lodash.min.js"></script>
+    <script src="backbone-min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+
+    <div class="carousel" data-role="carousel" data-items='[
+      { "label": "item 1", "url": "http://example.com" },
+      { "label": "item 2", "url": "http://example.com" },
+      { "label": "item 3", "url": "http://example.com" },
+      { "label": "item 4", "url": "http://example.com" },
+      { "label": "item 5", "url": "http://example.com" }
+    ]'>
+      <div class="carousel__items" data-role="carousel-items"></div>
+
+      <a href="#" class="carousel__control-left" data-role="carousel-control-left">&lt;</a>
+      <a href="#" class="carousel__control-right" data-role="carousel-control-right">&gt;</a>
+
+      <div class="carousel__bullets" data-role="carousel-bullets"></div>
+
+      <script type="text/template" id="carousel-item-template">
+        <div class="carousel__item red">
+          <h1 class="carousel__item-label">item <%= num %></h1>
+        </div>
+      </script>
+
+      <script type="text/template" id="carousel-bullet-template">
+        <a href="#" class="carousel__bullet"></a>
+      </script>
+    </div>
+
+  </body>
+</html>
